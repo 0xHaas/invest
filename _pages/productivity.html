@@ -1,0 +1,20 @@
+---
+title: Productivity
+description: "My blog posts about productivity"
+og-type: website
+permalink: /productivity
+subtitle-nav: true
+sub-navs:
+ - "<a href='/' title='home' rel='author'>Jonathan&nbsp;Haas</a>"
+ - "<a href='/about' title='About'>About</a>"
+ - "<a href='/blog' title='Blog'>Blog</a>"
+---
+
+{%- for post in site.posts -%}
+	{%- for category in post.categories -%}
+		{%- if category == "productivity" -%}
+			{%- include blog-listing.html -%}
+		{%- endif -%}
+	{%- endfor -%}
+{%- endfor -%}
+

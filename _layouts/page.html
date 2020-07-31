@@ -1,0 +1,32 @@
+{%- include pretty-numbers.html -%}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  {%- include head-matter.html -%}
+</head>
+
+<body>
+
+<article>
+
+<header>
+	<h1>{{ page.title }}</h1>
+	{%- if page.subtitle-nav -%}
+	<nav>
+	  	{%- for sub-nav in page.sub-navs -%}
+			{{sub-nav}}&emsp;
+		{%- endfor -%}
+	</nav>
+	{%- endif -%}
+</header>
+
+{{ content }}
+
+</article>
+
+{%- include footer.html -%}
+
+</body>
+
+</html>

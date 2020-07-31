@@ -1,0 +1,24 @@
+<nav class="subtitle-nav">
+{%- assign item-divider = "||" }
+{%- assign i = 0 %}
+ {%- for sub-nav in page.sub-navs -%}
+	{%- assign i = i | plus: 1 -%}
+  	{{ sub-nav }}{%- unless i == page.sub-navs.size -%}<span>{{item-divider}}</span>{%- endunless -%}
+ {%- endfor -%}
+ </nav>
+ </header>
+
+
+
+<!--
+
+{% assign i = 0 %}
+{% for post in site.posts %}
+{%- unless post.unlisted -%}
+{%- assign i = i | plus: 1 -%}
+{%- include blog-listing.html -%}
+{% endunless %}
+{%- if i == 3 -%}
+{%- break -%}
+{%- endif -%}
+{% endfor %} -->

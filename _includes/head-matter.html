@@ -1,0 +1,37 @@
+    <meta charset="UTF-8">
+    <meta name="generator" content="Jekyll">
+    <link rel='stylesheet' type='text/css' href='/css/main.css'>
+    {%- if page.syntax -%}
+    <link rel='stylesheet' type='text/css' href='/css/code.css'>
+    {%- endif -%}
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{%- if page.description -%}{{ page.description }}
+    {%- else -%}{{ site.description }}{%- endif -%}">
+    <meta name="author" content="Jonathan Haas">
+    {%- if page.no-index -%}
+    <meta name="robots" content="noindex" />
+    {%- endif -%}
+    {%- if page.blogpost -%}
+    <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
+    {%- endif -%}
+    <link rel="canonical" href="{%- if page.canonical == true -%}{{ site.url }}{{ page.canonical }}{%- else -%}{{ site.url }}{%- unless page.url == '/' -%}{{ page.url }}{%- endunless -%}{%- endif -%}">
+    <link rel="shortcut icon" href="/static/haas.png">
+    <link rel="apple-touch-icon" href="/static/haas.png">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+    <meta property="og:type" content="{% if page.og-type %}{{page.og-type}}{% else %}article{% endif %}"/>
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}"/>
+    <meta property="og:image" content="https://blog.jonathanha.as/static/haas.png"/>
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {%- if page.updated-date -%}
+    <meta property="article:modified_time" content="{{ page.updated-date }}" />
+    {%- endif -%}
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}"/>
+    <meta name="twitter:description" content="{%- if page.description -%}{{ page.description | truncate: 140 }}{%- else -%}{{ site.description | truncate: 140  }}{%- endif -%}"/>
+    <meta name="twitter:image" content="https://blog.jonathanha.as/static/haas.png"/>
+    {%- if page.index -%}
+    <meta name="have-i-been-pwned-verification" value="697f339a2e7f115c950361c21c40e33a">
+    {%- endif -%}

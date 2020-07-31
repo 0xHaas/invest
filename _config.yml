@@ -1,0 +1,41 @@
+title: "Jonathan's Blog"
+author: Jonathan Haas
+email: "hello@jonathanha.as"
+description: "Jonathan Haas's blog security, privacy, and productivity"
+github: jonhaas
+highlighter: rouge
+markdown: kramdown
+parse_block_html: false
+url: https://blog.jonathanha.as
+permalink: blog/:title
+timezome: America/Los Angeles
+show_drafts: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      blogpost: true
+      layout: post
+
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+
+collections:
+  pages:
+    output: true
+
+plugins:
+  - jekyll-feed

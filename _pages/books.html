@@ -1,0 +1,22 @@
+---
+title: Books
+description: "My blog posts about books"
+og-type: website
+permalink: /books
+subtitle-nav: true
+sub-navs:
+ - "<a href='/' title='home' rel='author'>Jonathan&nbsp;Haas</a>"
+ - "<a href='/about' title='About'>About</a>"
+ - "<a href='/blog' title='Blog'>Blog</a>"
+---
+
+<p>I used to read voraciously, but now my time is quite a bit more scattered. I prioritize content I feel I can extract high yield information from. Check out the <a href="/reading">blogs and publications I read</a>.</p>
+
+{%- for post in site.posts -%}
+	{%- for category in post.categories -%}
+		{%- if category == "books" -%}
+			{%- include blog-listing.html -%}
+		{%- endif -%}
+	{%- endfor -%}
+{%- endfor -%}
+

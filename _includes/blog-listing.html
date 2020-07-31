@@ -1,0 +1,38 @@
+{%- assign dateOfPost = {{post.date | date: "%d"}} -%}
+
+{%- if dateOfPost == "01" or dateOfPost == "21" or dateOfPost == "31" -%}
+	{%- assign ordinalEnding = "st" -%}
+{%- elsif dateOfPost == "02" or dateOfPost == "22" -%}
+	{%- assign ordinalEnding = "nd" -%}
+{%- elsif dateOfPost == "03" or dateOfPost == "23" -%}
+	{%- assign ordinalEnding = "rd" -%}
+{%- else %}
+	{%- assign ordinalEnding = "th" -%}
+{%- endif %}
+
+
+{%- assign firstDigitDofP = dateOfPost | slice: 0 -%}
+
+{%- if firstDigitDofP == "0" -%}
+	{%- assign prettyDateOfPost = dateOfPost | slice: 1 -%}
+{%- else -%}
+	{%- assign prettyDateOfPost = dateOfPost -%}
+{%- endif -%}
+
+
+{%- if post.now -%}
+
+	{%- assign now-description = post.description -%}
+	{%- assign nowDescriptionLength = now-description | size -%}
+	{%- assign nowDescriptionLength = nowDescriptionLength | minus: 1 -%}
+	{%- assign lastCharacterDescription = now-description | slice: nowDescriptionLength  -%}
+
+	{%- if lastCharacterDescription == "." -%}
+		{%- assign now-description = now-description | truncate: nowDescriptionLength, "" -%}
+	{%- endif -%}
+
+{%- endif -%}
+
+<p><a href="{{ post.url }}" title="{{ post.title }}" class="blog-listing-link">{%- if post.now -%}Now: {{ now-description }}
+{%- else -%}{{ post.title }}{%- endif -%}</a><br>
+<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ post.date | date: "%Y" }}</time></p>

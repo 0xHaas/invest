@@ -1,0 +1,20 @@
+---
+title: Blog Posts
+description: "The list of all of my blog posts."
+og-type: website
+blog-index: true
+permalink: /blog
+subtitle-nav: true
+sub-navs:
+ - "<a href='/' title='home' rel='author'>Jonathan&nbsp;Haas</a>"
+ - "<a href='/about' title='About'>About</a>"
+ - "<a href='/blog/random' title='Random Post'>Random&nbsp;Post</a>"
+---
+
+{%- for post in site.posts -%}
+{%- unless post.unlisted or post.now -%}
+	{%- include blog-listing.html -%}
+{%- endunless -%}
+{%- endfor -%}
+
+ 
