@@ -4,10 +4,8 @@ og-type: website
 layout: index
 ---
 
-Haas Capital is an early stage investment firm operated by [Jonathan Haas](https://jonathanha.as).
+Haas Capital is an angel investment and research company created by [Jonathan Haas](https://jonathanha.as).
 
-We invest primarily in productivity and security software and SaaS.
+We invest [in applications which help create a faster, more private and secure world](/portfolio).
 
-Interested? Email {{ site.email }}
-
-
+Is this you? Email {{ site.email }}
