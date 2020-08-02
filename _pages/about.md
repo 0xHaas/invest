@@ -7,7 +7,6 @@ nav-title: true
 subtitle-nav: true
 sub-navs:
  - "<a href='/' title='home' rel='author'>Haas&nbsp;Capital</a>"
- - "<a href='/now' title='Now Page'>Now</a>"
  - "<a href='/colophon'>Colophon</a>"
 ---
 
