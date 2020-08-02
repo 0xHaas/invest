@@ -1,12 +1,12 @@
-title: "Jonathan's Blog"
-author: Jonathan Haas
-email: "hello@jonathanha.as"
-description: "Jonathan Haas's blog security, privacy, and productivity"
-github: jonhaas
+title: "Haas Capital"
+author: Haas Capital
+email: "hello@haas.capital"
+description: "Haas Capital is a venture firm which invests in early-stage productivity and security software"
+github: haas.capital
 highlighter: rouge
 markdown: kramdown
 parse_block_html: false
-url: https://blog.jonathanha.as
+url: https://haas.capital
 permalink: blog/:title
 timezome: America/Los Angeles
 show_drafts: true

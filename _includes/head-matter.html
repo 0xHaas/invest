@@ -7,7 +7,7 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{%- if page.description -%}{{ page.description }}
     {%- else -%}{{ site.description }}{%- endif -%}">
-    <meta name="author" content="Jonathan Haas">
+    <meta name="author" content="Haas Capital">
     {%- if page.no-index -%}
     <meta name="robots" content="noindex" />
     {%- endif -%}
@@ -22,7 +22,7 @@
     <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:type" content="{% if page.og-type %}{{page.og-type}}{% else %}article{% endif %}"/>
     <meta property="og:url" content="{{ page.url | prepend: site.url }}"/>
-    <meta property="og:image" content="https://blog.jonathanha.as/static/haas.png"/>
+    <meta property="og:image" content="https://haas.capital/static/haas.png"/>
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     {%- if page.updated-date -%}
@@ -31,7 +31,7 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}"/>
     <meta name="twitter:description" content="{%- if page.description -%}{{ page.description | truncate: 140 }}{%- else -%}{{ site.description | truncate: 140  }}{%- endif -%}"/>
-    <meta name="twitter:image" content="https://blog.jonathanha.as/static/haas.png"/>
+    <meta name="twitter:image" content="https://haas.capital/static/haas.png"/>
     {%- if page.index -%}
     <meta name="have-i-been-pwned-verification" value="697f339a2e7f115c950361c21c40e33a">
     {%- endif -%}

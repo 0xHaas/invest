@@ -7,18 +7,3 @@
  {%- endfor -%}
  </nav>
  </header>
-
-
-
-<!--
-
-{% assign i = 0 %}
-{% for post in site.posts %}
-{%- unless post.unlisted -%}
-{%- assign i = i | plus: 1 -%}
-{%- include blog-listing.html -%}
-{% endunless %}
-{%- if i == 3 -%}
-{%- break -%}
-{%- endif -%}
-{% endfor %} -->

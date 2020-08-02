@@ -3,9 +3,8 @@ title: Portfolio
 permalink: /portfolio
 subtitle-nav: true
 sub-navs:
- - "<a href='/' title='home' rel='author'>Jonathan&nbsp;Haas</a>"
+ - "<a href='/' title='home' rel='author'>Haas&nbsp;Capital</a>"
  - "<a href='/about' title='About'>About</a>"
- - "<a href='/blog' title='Blog'>Blog</a>"
 ---
 
 <style >
@@ -14,12 +13,9 @@ sub-navs:
 	}
 </style>
 
-I've been working for tech companies since 2009. Over the years, I've given a number of talks, presentations, and quotes on my work.
+We invest in startups via [Haas Capital](https://haas.capital). I tend to invest via syndicates, but I happily invest via other mediums if it's a good fit. Most of my investments are things that make myself and others more productive, so if you're building something in this space, let me know.
 
-## Talks
-
-## Long Form
-
-## Contact
-
-Get in touch via [LinkedIn](https://www.linkedin.com/in/jonathanahaas/) or write me an email at: {{ site.email }}
+Some of my more recent investments include:
+- [Atoms](https://atoms.com)
+- [CommandE](https://getcommande.com)
+- [Haus](https://drink.haus/)

@@ -1,9 +1,13 @@
 ---
-title: "Jonathan Haas"
+title: "Haas Capital"
 og-type: website
 layout: index
 ---
 
-I'm a security and privacy engineer based in San Francisco, California.
+Haas Capital is an early stage investment firm operated by [Jonathan Haas](https://jonathanha.as).
 
-My blog is a mix of security and privacy engineering, [productivity](/productivity), the [books](/books) I read and [things I use](/uses).
+We invest primarily in productivity and security software and SaaS.
+
+Interested? Email {{ site.email }}
+
+

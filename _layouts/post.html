@@ -14,7 +14,7 @@
 	<h1 class="post-title">{%- if page.now -%}{{ page.title | truncate: 3, "" }}{%- else -%}{{ page.title }}{%- endif -%}</h1>
 	<p class="post-description">{%- if page.url == "/now" -%}{{ now-description }}{%- else -%}{{ page.description }}{%- endif -%}</p>
 	<p class="name-and-date">
-	<a href="/" title="Jonathan Haas" rel="author">Jonathan Haas</a>&ensp;&middot;&ensp;
+	<a href="/" title="Haas Capital" rel="author">Haas Capital</a>&ensp;&middot;&ensp;
 	<time datetime="{{ postDate | date: '%Y-%m-%d' }}">{{ postDate | date: "%B" }} {{prettyDateOfPost}}{{ ordinalEnding }}, {{ postDate | date: "%Y" }}</time></p>
 </header>
 
