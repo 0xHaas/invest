@@ -13,9 +13,9 @@ sub-navs:
 	}
 </style>
 
-We invest in startups via [Haas Capital](https://haas.capital). I tend to invest via syndicates, but I happily invest via other mediums if it's a good fit. Most of my investments are things that make myself and others more productive, so if you're building something in this space, let me know.
+We invest in startups via [Haas Capital Holdings, LLC](https://haas.capital). While we tend to invest via syndicates, we happily invest via other mediums if it's a good fit. Most of our investments are things that make us and others more productive, so if you're building something in this space, let us know.
 
-Some of my more recent investments include:
+Some of our more recent investments include:
 - [Atoms](https://atoms.com)
 - [CommandE](https://getcommande.com)
 - [Haus](https://drink.haus/)
